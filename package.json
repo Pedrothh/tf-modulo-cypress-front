@@ -1,0 +1,28 @@
+{
+  "name": "tf-modulo-cypress-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/steps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedrothh/tf-modulo-cypress-front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedrothh/tf-modulo-cypress-front/issues"
+  },
+  "homepage": "https://github.com/Pedrothh/tf-modulo-cypress-front#readme",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cypress": "^9.5.4",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
