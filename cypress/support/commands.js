@@ -27,8 +27,10 @@
 
 
 beforeEach(() => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
     Given("que estou na página principal", () => {
-        cy.visit("https://www.amazon.com/")
+        cy.visit("https://www.amazon.com/ref=nav_logo")
     })
 });
 
