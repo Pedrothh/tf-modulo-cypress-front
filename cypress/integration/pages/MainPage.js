@@ -11,12 +11,12 @@ export let textoResultadoPesquisado = "#search > span > div > h1 > div > div.sg-
 export default class MainPage{
     
     preencherBarraDePesquisa(texto){
-        basePage.preencherInput(campoBarraDePesquisa, texto)
+        basePage.preencherInputComTeclaNoFinal(campoBarraDePesquisa, texto, "{enter}")
     }
 
-    clicarNoBotaoPesquisar(){
-        basePage.click(botaoDePesquisa)
-    }
+    // clicarNoBotaoPesquisar(){
+    //     basePage.clickForce(botaoDePesquisa)
+    // }
     
     validarTextoPesquisado(texto){
         basePage.validarText(textoResultadoPesquisado, texto)

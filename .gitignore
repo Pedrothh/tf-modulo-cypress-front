@@ -9,7 +9,6 @@ out/
 **/node_modules/
 */package-lock.json
 **/allure-report/
-**/allure-results/
 **/screenshots/
 
 

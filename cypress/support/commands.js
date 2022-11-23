@@ -32,10 +32,10 @@ beforeEach(() => {
     })
 });
 
-afterEach(() => {
-    cy.clearCookies();
-    cy.clearLocalStorage();
-})
+// afterEach(() => {
+//     cy.clearCookies();
+//     cy.clearLocalStorage();
+// })
 
 
 // import MainPage from "../integration/pages/MainPage";
