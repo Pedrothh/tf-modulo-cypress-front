@@ -11,7 +11,7 @@ export default class BasePage {
    }
 
    preencherInput(element, text){ 
-   cy.get(element).type(text)
+      cy.get(element).type(text)
    }
 
    preencherInputComTeclaNoFinal(element, text, tecla){
@@ -42,8 +42,13 @@ export default class BasePage {
       cy.url().should('be.equal', url)
    }
 
+   validarContainsUrl(url){
+      cy.url().should('include', url)
+   }
+
    limparInput(element){ 
       cy.get(element).clear()
    }
+   
   }
   

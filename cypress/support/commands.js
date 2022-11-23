@@ -27,10 +27,15 @@
 
 
 beforeEach(() => {
-    Given("que estou na página de login", () => {
-        cy.visit("https://itera-qa.azurewebsites.net/Login")
+    Given("que estou na página principal", () => {
+        cy.visit("https://www.amazon.com/")
     })
 });
+
+afterEach(() => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
+})
 
 
 // import MainPage from "../integration/pages/MainPage";
