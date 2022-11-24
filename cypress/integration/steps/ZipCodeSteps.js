@@ -13,14 +13,22 @@ const mainPage = new MainPage;
 And("faco login", () => {
     mainPage.login()
 })
-When(/^clico no botao EnviarPara$/, () => {   
+When("clico no botao EnviarPara", () => {   
 	mainPage.clicarNoBotaoZipCode()
 });
 
-And(/^digito o codigo postal para entrega$/, () => {
-	mainPage.escreverZipCode(10005)
+And("digito o codigo postal para entrega", () => {
+	mainPage.escreverZipCode()
 });
 
-Then(/^devo validar a mudança no local para entrega$/, () => {
+And("clico em Apply", () => {
+    mainPage.clicarBtnApply()
+})
+
+And("confirmo no botão Done", () => {
+    mainPage.clicarBtnDone()
+})
+
+Then("devo validar a mudança no local para entrega", () => {
     mainPage.validarMudancaLocalEntrega()
 });

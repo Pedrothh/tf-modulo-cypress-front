@@ -11,6 +11,8 @@ const loginPage = new LoginPage();
 export let botaoLogin = "#nav-link-accountList"
 export let btnZipCode = "#nav-global-location-data-modal-action"
 export let entradaZipCode = "#GLUXZipUpdateInput"
+export let btnApply = "#GLUXZipUpdate > span > input"
+export let btnDone = "#a-popover-1 > div > div.a-popover-footer > span > span > span > button"
 export let localEntrega = "#glow-ingress-line2"
 
 let campoBarraDePesquisa = "#twotabsearchtextbox";
@@ -60,7 +62,15 @@ export default class MainPage{
     }
 
     escreverZipCode(){
-        basePage.preencherInput(entradaZipCode, Number)
+        basePage.preencherInput(entradaZipCode, "10005")
+    }
+
+    clicarBtnApply(){
+        basePage.click(btnApply)
+    }
+    
+    clicarBtnDone(){
+        basePage.click(btnDone)
     }
 
     validarMudancaLocalEntrega(){
