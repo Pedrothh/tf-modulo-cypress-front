@@ -13,10 +13,12 @@ When("digito na barra de pesquisa tv 55 e aperto enter", () => {
 })
 
 Then("devo ser redirecionado para a página de pesquisa", () => {
+    basePage.tempo(2000)
     basePage.validarContainsUrl("tv")
 })
 
 And("devo visualizar resultados para o texto do item pesquisado", () => {
+    basePage.tempo(2000)
     mainPage.validarTextoPesquisado("tv 55")
 })
 

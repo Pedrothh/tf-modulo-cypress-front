@@ -2,6 +2,12 @@
   "buildOrder" : 1,
   "data" : {
     "run" : 6,
+    "retry" : 10
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "run" : 6,
     "retry" : 6
   }
 }, {
