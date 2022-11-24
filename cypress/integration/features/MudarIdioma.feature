@@ -1,6 +1,6 @@
 
 
-Feature: CHANGE LANGUAGE
+Feature: Mudar Idioma
 
    Scenario: Validar redirecionamento para página de escolha de idioma pelo botão da bandeira do header
       Given que estou na página principal

@@ -53,6 +53,10 @@ export default class BasePage {
    mouseOver(element){
       cy.get(element).trigger('mouseover')
    }
+
+   validarVisibilidade(element) {
+      cy.get(element).scrollIntoView().should('be.visible') 
+    }
    
   }
   

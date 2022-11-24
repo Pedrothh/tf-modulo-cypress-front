@@ -12,13 +12,15 @@ When("digito na barra de pesquisa tv 55 e aperto enter", () => {
     mainPage.preencherBarraDePesquisa("tv 55")
 })
 
-Then("devo visualizar resultados para o texto do item pesquisado", () => {
+Then("devo ser redirecionado para a página de pesquisa", () => {
+    basePage.validarContainsUrl("tv")
+})
+
+And("devo visualizar resultados para o texto do item pesquisado", () => {
     mainPage.validarTextoPesquisado("tv 55")
 })
 
-And("devo ser redirecionado para a página de pesquisa", () => {
-    basePage.validarContainsUrl("tv")
-})
+
 
 
 /// BARRA DE PESQUISA - CENÁRIO NEGATIVO ///

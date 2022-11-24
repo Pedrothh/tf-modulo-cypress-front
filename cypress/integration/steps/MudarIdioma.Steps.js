@@ -6,7 +6,7 @@ const mainPage = new MainPage;
 const basePage = new BasePage;
 
 
-////// CHANGE LANGUAGE - CENÁRIOS POSITIVOS //////
+////// MUDAR IDIOMA - CENÁRIOS POSITIVOS //////
 
 //////////// CENÁRIO 01 ////////////
 When("clico no botão da bandeira", () => {
