@@ -25,24 +25,11 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
-
 beforeEach(() => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
     Given("que estou na página principal", () => {
-        cy.visit("https://www.amazon.com/")
+        cy.visit("https://www.amazon.com/ref=nav_logo")
+        
     })
 });
-
-// afterEach(() => {
-//     cy.clearCookies();
-//     cy.clearLocalStorage();
-// })
-
-
-// import MainPage from "../integration/pages/MainPage";
-// const mainPage = new MainPage;
-
-// afterEach(() => {
-//     Then("limpo a massa de dados", () => {
-//         mainPage.deleteUser();
-//     })
-// })

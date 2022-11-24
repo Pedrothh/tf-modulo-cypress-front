@@ -5,8 +5,8 @@ Feature: Barra De Pesquisa
    Scenario: Validar redirecionamento pela barra de pesquisa com sucesso
       Given que estou na página principal
       When digito na barra de pesquisa tv 55 e aperto enter
-      Then devo visualizar resultados para o texto do item pesquisado
-      And devo ser redirecionado para a página de pesquisa
+      Then devo ser redirecionado para a página de pesquisa
+      And devo visualizar resultados para o texto do item pesquisado
 
    Scenario: Tentar validar o não redirecionamento pela barra de pesquisa quando não houver texto inserido
       Given que estou na página principal

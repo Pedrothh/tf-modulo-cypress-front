@@ -1,0 +1,17 @@
+[ {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 5,
+    "Teste falhado" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 4,
+    "Teste falhado" : 2
+  }
+}, {
+  "data" : {
+    "Product defects" : 2
+  }
+} ]
