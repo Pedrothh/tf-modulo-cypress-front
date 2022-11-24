@@ -25,5 +25,8 @@
     "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress": "^9.5.4",
     "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
   }
 }

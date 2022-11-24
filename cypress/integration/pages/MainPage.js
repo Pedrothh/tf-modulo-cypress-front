@@ -2,7 +2,16 @@
 
 
 import BasePage from "./BasePage";
+import LoginPage from "./LoginPage";
+
 const basePage = new BasePage();
+const loginPage = new LoginPage();
+
+
+export let botaoLogin = "#nav-link-accountList"
+export let btnZipCode = "#nav-global-location-data-modal-action"
+export let entradaZipCode = "#GLUXZipUpdateInput"
+export let localEntrega = "#glow-ingress-line2"
 
 let campoBarraDePesquisa = "#twotabsearchtextbox";
 
@@ -34,6 +43,7 @@ let campoAmazonMusicUnlimited = "ul.hmenu:nth-child(2) > li:nth-child(3) > a:nth
 
 let campoTextoAmazonMusicUnlimited = "a.nav-hasArrow:nth-child(2) > span:nth-child(1)"
 
+
 export default class MainPage{
     
     preencherBarraDePesquisa(texto){
@@ -44,6 +54,27 @@ export default class MainPage{
     validarTextoPesquisado(texto){
         basePage.validarText(textoResultadoPesquisado, texto);
     }
+
+    clicarNoBotaoZipCode(){
+        basePage.clickForce(btnZipCode)
+    }
+
+    escreverZipCode(){
+        basePage.preencherInput(entradaZipCode, Number)
+    }
+
+    validarMudancaLocalEntrega(){
+        basePage.validarText(localEntrega, "New York")
+    }
+
+    login(){
+        basePage.clickForce(botaoLogin)
+        loginPage.escreverCampoEmail("robotesteqadbc@gmail.com")
+        loginPage.clicarContinuar()
+        loginPage.escreverCampoSenha("Me8YTChPf5j9KRn#")
+        loginPage.clicarFazerLogin()
+    }
+
 
     clicarNoBotaoBandeira(){
         basePage.click(botaoDeBandeira);
@@ -89,9 +120,7 @@ export default class MainPage{
 
 
 
-    
-
-
+   
     
 
 
