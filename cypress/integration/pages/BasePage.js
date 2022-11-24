@@ -49,6 +49,14 @@ export default class BasePage {
    limparInput(element){ 
       cy.get(element).clear()
    }
+
+   mouseOver(element){
+      cy.get(element).trigger('mouseover')
+   }
+
+   validarVisibilidade(element) {
+      cy.get(element).scrollIntoView().should('be.visible') 
+    }
    
   }
   
